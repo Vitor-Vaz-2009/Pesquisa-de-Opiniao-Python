@@ -1,46 +1,21 @@
-# 📊 Pesquisa de Opinião em Python
+excelente = 0
+ruim = 0
+bom = 0
 
-Este projeto é um programa em Python desenvolvido para realizar uma pesquisa de opinião com clientes, com o objetivo de avaliar o nível de satisfação com o atendimento.
+for i in range(50):
+    print(f"\nPessoa {i+1}:")
+    nome = input("Digite seu nome: ")
+    idade = int(input("Digite sua idade: "))
+    opiniao = int(input("Digite sua opinião (1-excelente, 2-bom, 3-ruim): "))
 
----
+    if opiniao == 1:
+        excelente += 1
+    elif opiniao == 2:
+        bom += 1
+    elif opiniao == 3:
+        ruim += 1
 
-## 💡 Como funciona
-
-O programa:
-- Coleta nome, idade e opinião do cliente
-- Opções de resposta:
-  - 1 = Excelente
-  - 2 = Bom
-  - 3 = Ruim
-- Repete o processo para 50 entrevistados
-- Utiliza estruturas de repetição (for) e decisão (if/elif)
-- Exibe o resultado final da pesquisa
-
----
-
-## 🛠️ Tecnologias utilizadas
-
-- Python
-
----
-
-## ▶️ Como executar
-
-1. Abra o arquivo `.py`
-2. Execute o programa no terminal ou VS Code
-3. Digite as informações solicitadas
-
----
-
-## 📈 Exemplo de saída
-
-O programa exibe ao final:
-- Número de respostas "Excelente"
-- Número de respostas "Bom"
-- Número de respostas "Ruim"
-
----
-
-## 👨‍💻 Autor
-
-Projeto desenvolvido por Vitor Vaz da Silva
+print("\nResultado da pesquisa:")
+print("Número de pessoas que responderam excelente:", excelente)
+print("Número de pessoas que responderam bom:", bom)
+print("Número de pessoas que responderam ruim:", ruim)
