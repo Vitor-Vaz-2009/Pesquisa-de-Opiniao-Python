@@ -43,4 +43,4 @@ O programa exibe ao final:
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido para atividade acadêmica.
+Projeto desenvolvido por Vitor Vaz da Silva
